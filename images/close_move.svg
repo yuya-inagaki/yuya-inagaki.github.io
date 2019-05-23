@@ -1,0 +1,15 @@
+
+<svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd; stroke: #1489ff; stroke-width:10; stroke-dasharray:2500; stroke-dashoffset:2500; animation: show 2s ease-in 0s forwards;}
+    @keyframes show {
+        0%{stroke-dashoffset:2500; fill:rgba(0, 0, 0, 0);}
+        50%{stroke-dashoffset:0; fill:rgba(0, 0, 0, 0);}
+        100%{stroke-dashoffset:0; fill:#1489ff;}
+    }
+</style>
+<g>
+	<polygon class="st0" points="512,89.75 422.256,0.005 256.004,166.256 89.754,0.005 0,89.75 166.255,256 0,422.25 89.754,511.995 
+		256.004,345.745 422.26,511.995 512,422.25 345.744,256 	" style="fill: rgb(75, 75, 75);"></polygon>
+</g>
+</svg>

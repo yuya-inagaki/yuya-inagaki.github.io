@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+/* Section1 */
+#sec1{width:100%; height:100vh; padding:10px 0; box-sizing:border-box; -webkit-animation: bg-color 10s infinite; }
+.top-sec1-box{width:calc(100% - 20px); height:100%; margin:0px 10px; background-color:white;}
+.top-sec1-box .name-icon{width:500px; position:absolute; top:50%; left:50%; pointer-events:none; transform:translateY(-50%) translateX(-50%); -webkit- transform:translateY(-50%) translateX(-50%); padding:3px 0; -webkit-animation: bg-color 10s infinite;}
+@media screen and (max-width:1000px) {
+    .top-sec1-box .name-icon{width:400px;}
+}
+@media screen and (max-width:750px) {
+    .top-sec1-box .name-icon{width:400px;}
+}
+@media screen and (max-width:450px) {
+    .top-sec1-box .name-icon{width:250px;}
+}
+@media screen and (orientation: landscape){
+    .top-sec1-box .name-icon{width:500px; max-width:50%;} /*横向きの時は少し縮尺*/
+}
+.top-sec1-box .top-scroll{width:200px; position:absolute; bottom:20px; left:50%; transform:translateX(-50%); background:repeating-linear-gradient(#00b1ff, #00b1ff 25px, #8be4fc 0, #8be4fc 50px); animation: move-stripe1 1.0s infinite linear;}
+/* 横向きの場合のスタイル */
+@media screen and (orientation: landscape) and (max-width:750px) {
+    .top-sec1-box .top-scroll{display:none;}
+}
+/* //Section1 */
+
+/* Section2 */
+#sec2{width:100%; box-sizing:border-box; padding-top:50px;}
+#sec2 h1{font-family:'Spinnaker', sans-serif; letter-spacing:5px; text-align:center;}
+#sec2 .title_underline{width:200px; margin:0 auto 20px; display:block; pointer-events:none; background:repeating-linear-gradient(90deg, #1f1f1f, #1f1f1f 25px, #d8d8d8 0, #d8d8d8 50px); animation: move-stripe2 2s infinite linear; background-size:cover;}
+#sec2 .sec2_link_icon{border-radius:50%; width:60%; max-width:300px; margin:0 auto; display:block; box-sizing:border-box; pointer-events:none;}
+#sec2 h2{font-family:'Spinnaker', sans-serif; letter-spacing:5px; text-align:center;}
+#sec2 .contents01{}
+/* //Section2 */
+
+/* Space */
+#space01{width:100%; height:100px; margin-top:50px; -webkit-clip-path: polygon(0 100%, 100% 0%, 100% 100%); clip-path: polygon(0 100%, 100% 0%, 100% 100%); background-color:#a5d5ff;}
+#space02{width:100%; height:100px; -webkit-clip-path: polygon(0 0, 100% 0%, 0 100%); clip-path: polygon(0 0, 100% 0%, 0 100%); background-color:#a5d5ff;}
+@media screen and (max-width:750px) {
+    #space01,#space02{height:50px;}
+}
+/* //Space */
+
+/* Section3 */
+#sec3{width:100%; box-sizing:border-box; background-color:#a5d5ff; text-align: center;}
+#sec3 h1{font-family:'Spinnaker', sans-serif; letter-spacing:5px; text-align:center;}
+#sec3 p{max-width:850px; margin:0 auto;}
+#sec3 .title_underline{width:200px; margin:0 auto 20px; display:block; pointer-events:none; background:repeating-linear-gradient(90deg, #ffffff, #ffffff 25px, #1f1f1f 0, #1f1f1f 50px); animation: move-stripe2 2s infinite linear; background-size:cover;}
+/* //Section3 */
+
+/* Section4 */
+#sec4{width:100%; box-sizing:border-box; padding-top:50px; padding-bottom:50px; text-align: center;}
+#sec4 h1{font-family:'Spinnaker', sans-serif; letter-spacing:5px; text-align:center;}
+#sec4 .title_underline{width:200px; margin:0 auto 20px; display:block; pointer-events:none; background:repeating-linear-gradient(90deg, #1f1f1f, #1f1f1f 25px, #d8d8d8 0, #d8d8d8 50px); animation: move-stripe2 2s infinite linear; background-size:cover;}
+/* //Section4 */
+
+
+#PANDA{width:400px; height:auto; margin:0 auto; display:none;}
+#PANDA .cls-1 {fill-rule:evenodd; stroke: #000000; fill: rgba(255, 255, 255, 0); stroke-width:3; stroke-dasharray:2000; stroke-dashoffset:2000; animation: panda1 2s ease-in 0s forwards; animation-delay:1.0s;}
+#PANDA .cls-2 {fill-rule:evenodd; stroke: #000000; fill: rgba(255, 255, 255, 0); stroke-width:3; stroke-dasharray:2000; stroke-dashoffset:2000; animation: panda1 2s ease-in 0s forwards; animation-delay:1.4s;}
+#PANDA .cls-3 {fill-rule:evenodd; stroke: #000000; fill: rgba(255, 255, 255, 0); stroke-width:3; stroke-dasharray:2000; stroke-dashoffset:2000; animation: panda3 2s ease-in 0s forwards; animation-delay:1.8s;}
+#PANDA .cls-4 {fill-rule:evenodd; stroke: #000000; fill: rgba(255, 255, 255, 0); stroke-width:3; stroke-dasharray:2000; stroke-dashoffset:2000; animation: panda2 2s ease-in 0s forwards; animation-delay:2.2s;}
+#PANDA .cls-5 {fill-rule:evenodd; stroke: #000000; fill: rgba(255, 255, 255, 0); stroke-width:3; stroke-dasharray:2000; stroke-dashoffset:2000; animation: panda1 2s ease-in 0s forwards; animation-delay:2.6s;}
+#PANDA .cls-6 {fill-rule:evenodd; stroke: #000000; fill: rgba(255, 255, 255, 0); stroke-width:3; stroke-dasharray:2000; stroke-dashoffset:2000; animation: panda2 2s ease-in 0s forwards; animation-delay:3.0s;}
+#PANDA .cls-7 {fill-rule:evenodd; stroke: #000000; fill: rgba(255, 255, 255, 0); stroke-width:3; stroke-dasharray:2000; stroke-dashoffset:2000; animation: panda1 2s ease-in 0s forwards; animation-delay:3.4s;}
+
+/* keyframe */
+@keyframes panda1 {
+    0%{stroke-dashoffset:2000; }
+    100%{stroke-dashoffset:0; fill:#646464;}
+}
+@-webkit-keyframes panda1 {
+    0%{stroke-dashoffset:2000; }
+    100%{stroke-dashoffset:0; fill:#646464;}
+}
+@keyframes panda2 {
+    0%{stroke-dashoffset:2000; }
+    100%{stroke-dashoffset:0; fill:#eaeaea;}
+}
+@keyframes panda3 {
+    0%{stroke-dashoffset:2000; }
+    100%{stroke-dashoffset:0; fill:#ffffff;}
+}
+@-webkit-keyframes bg-color {
+  0% { background-color: #e74c3c; }
+  20% { background-color: #f1c40f; }
+  40% { background-color: #1abc9c; }
+  60% { background-color: #3498db; }
+  80% { background-color: #9b59b6; }
+  100% { background-color: #e74c3c; }
+}
+@keyframes bg-color {
+  0% { background-color: #e74c3c; }
+  20% { background-color: #f1c40f; }
+  40% { background-color: #1abc9c; }
+  60% { background-color: #3498db; }
+  80% { background-color: #9b59b6; }
+  100% { background-color: #e74c3c; }
+}
+@keyframes move-stripe1 {
+    0% {background-position-y: -50px;}
+    100% {background-position-y: 0;}
+}
+@keyframes move-stripe2 {
+    0% {background-position-x: -50px;}
+    100% {background-position-x: 0;}
+}
+/* //keyframe */

@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+#top01{background-color:aqua;}
+
+
+/* ヘッダー */
+header{width:100%; height:80px; padding-top:20px; position:fixed; transition:1s; z-index:1;}
+.header_background{background-color:rgba(255, 255, 255, 0.92); height:60px; padding-top:0px; transition:0.5s;}
+header img{height:60px; margin-left:20px;}
+#header_menu{width:100vw; height:100vh; background-color:rgb(0, 0, 0); position:fixed; top:0; left:0; box-sizing:border-box; display:none;}
+.header_menu_contents{position:absolute; top:50%;transform:translateY(-50%); width:100%; text-align:center;}
+#header_menu h1{font-family:'Spinnaker', sans-serif; letter-spacing:5px; text-align:center; color:white; margin:20px 0;}
+/* ハンバーガーボタン */
+.menu-trigger,.menu-trigger span {display: inline-block; transition: all .4s; box-sizing: border-box;}
+.menu-trigger {position: relative; width: 40px; height: 34px; margin-top:10px; margin-right:20px; float:right; z-index:1;}
+.menu-trigger span {position: absolute; left: 0; width: 100%; height: 4px; background-color: #000000; border-radius: 4px;}
+.menu-trigger span:nth-of-type(1) {top: 0;}
+.menu-trigger span:nth-of-type(2) {top: 15px;}
+.menu-trigger span:nth-of-type(3) {bottom: 0;}
+.menu-trigger.active span{background-color: #ffffff;}
+.menu-trigger.active span:nth-of-type(1) {-webkit-transform: translateY(15px) rotate(-315deg); transform: translateY(15px) rotate(-315deg);}
+.menu-trigger.active span:nth-of-type(2) {opacity: 0;}
+.menu-trigger.active span:nth-of-type(3) {-webkit-transform: translateY(-15px) rotate(315deg); transform: translateY(-15px) rotate(315deg);}
+/* //ハンバーガーボタン */
+/* //ヘッダー */
+
+/* モーダルウィンドウ */
+.modal {display: none;}
+.mb{cursor:pointer;}
+.mb:hover p{text-decoration:underline;}
+.modal .youtube {position: fixed; z-index: 100; background: #000; width: 960px; height: 540px; left: 50%; top: 50%; border:3px solid #1489ff;}
+@media screen and (max-width:980px){
+    .modal .youtube{width: 640px; height: 360px;}
+}
+@media screen and (max-width:639px){
+    .modal .youtube {width:100%; height:calc(100vw * 9 / 16); background-color:#ffffff; margin-left:-50%; margin-right:0; border:none;}
+}
+.modal .youtube iframe{width:100%; height:100%;}
+.modal .youtube .closeBtn {position: absolute; right: 0; top: -60px; width:50px; height:50px;}
+.modal .popupBK {position: absolute; z-index: 99; left: 0; top: 0; width: 100%; height: 100%; position: fixed; top:0; left:0; background-color: #fff; opacity: 0.8; filter: alpha(opacity=80);}
+.closeBtn_shape{fill-rule:evenodd; stroke: #1489ff; stroke-width:10; stroke-dasharray:2500; stroke-dashoffset:2500; animation: show 2s ease-in 0s forwards;}
+@keyframes show {
+    0%{stroke-dashoffset:2500; fill:rgba(0, 0, 0, 0);}
+    50%{stroke-dashoffset:0; fill:rgba(0, 0, 0, 0);}
+    100%{stroke-dashoffset:0; fill:#1489ff;}
+}
+.closeBtn_shape2{fill-rule:evenodd; stroke: white; stroke-width:10; stroke-dasharray:2500; stroke-dashoffset:2500; animation: show2 2s ease-in 0s forwards;}
+@keyframes show2 {
+    0%{stroke-dashoffset:2500; fill:rgba(0, 0, 0, 0);}
+    50%{stroke-dashoffset:0; fill:rgba(0, 0, 0, 0);}
+    100%{stroke-dashoffset:0; fill:white;}
+}
+/* //モーダルウィンドウ */
+
+/* ボタン */
+.btn01{padding:0; margin:10px; border:2px solid black; border-radius:2px; display:inline-block; cursor:pointer;}
+.btn01 a{padding:10px 20px; display:inline-block; background-color:white; text-decoration:none; transition:0.5s;}
+.btn01 a:hover{color:white; background-color:black;}
+.btn02{padding:0; margin:10px; border:2px solid #ffffff; border-radius:2px; display:inline-block; cursor:pointer;}
+.btn02 a{padding:10px 20px; color:white; display:inline-block; background-color:rgba(255, 255, 255, 0.15); text-decoration:none; transition:0.5s;}
+.btn02 a:hover{color:white; background-color:rgba(0, 0, 0, 0.55);}
+/* //ボタン */
+
+/* オープニング */
+.entrance_cover{width:100vw; height:100vh; background-color:rgba(0, 0, 0, 0.17); position:fixed; top:0; left:0; box-sizing:border-box; z-index:2;}
+.entrance_cover1{width:25vw; height:100vh; background-color: #000000; position:fixed; top:0; left:0;}
+.entrance_cover2{width:25vw; height:100vh; background-color: #000000; position:fixed; top:0; left:25vw;}
+.entrance_cover3{width:25vw; height:100vh; background-color: #000000; position:fixed; top:0; left:50vw;}
+.entrance_cover4{width:25vw; height:100vh; background-color: #000000; position:fixed; top:0; left:75vw;}
+.main_contents{display:none; height:100%;}
+#line1 {height:10px; width:50%; background-color:white; position:absolute; top:50%; margin-top:-5px; left:50%; margin-left:-25%; animation:var1 3s ease 0s 1 alternate forwards running;}
+#line2 {height:10px; width:50%; background-color:white; position:absolute; top:50%; margin-top:-5px; left:50%; margin-left:-25%; animation:var2 3s ease 0s 1 alternate forwards running;}
+/* CLICK & START */
+@media screen and (min-width:500px){
+    #click_start{position:absolute; left:calc(50% - 200px); top:calc(50% - 50px); width:400px; height:100px;}
+}
+@media screen and (max-width:499px){
+    #click_start{position:absolute; left:calc(50% - 150px); top:calc(50% - 37.5px); width:300px; height:75px;}
+}
+#click_start .cls-1 {fill-rule:evenodd; stroke: #ffffff; fill: rgba(255, 255, 255, 0); stroke-width:3; stroke-dasharray:2000; stroke-dashoffset:2000; -webkit-animation: hello 2s ease-in 0s forwards; animation: click_start 2s ease-in 0s forwards; animation-delay:3s;}
+/* //CLICK & START */
+/* //オープニング */
+
+
+/* footer */
+footer{width:100%;}
+.footer_scroll{width:100%; padding:5px 0; background-color:#555555; text-align:center; transition:0.3s; cursor:pointer;}
+.footer_scroll:hover{background-color:#aaaaaa;}
+.footer_scroll i{font-size:1.5em; color:white;}
+.footer_main{width:100%; background-color:#2a2a2a; padding:20px 0;}
+.footer_main p{color:white; font-size:0.8em; font-weight:lighter; margin:0.2em 0;}
+.footer_main a{color:white;}
+.footer_bottom{width:100%; text-align:center; font-size:0.8em; padding:10px 0;}
+/* //footer */
+
+/* keyframe */
+@keyframes var1 {
+    0%{transform:translateX(1000px);}
+    30%{transform:translateX(0px); width:50%;}
+    40%{width:100%;transform:translateX(-25vw);}
+    50%{width:100%;transform:translateX(-25vw);height:10px;}
+    100%{width:50%;transform:translateY(50px); height:5px;}
+}
+@-webkit-keyframes var1 {
+    0%{transform:translateX(1000px);}
+    30%{transform:translateX(0px); width:50%;}
+    40%{width:100%;transform:translateX(-25vw);}
+    50%{width:100%;transform:translateX(-25vw);height:10px;}
+    100%{width:50%;transform:translateY(50px); height:5px;}
+}
+@keyframes var2 {
+    0%{transform:translateX(-1000px);}
+    30%{transform:translateX(0px); width:50%;}
+    40%{width:100%;transform:translateX(-25vw);}
+    50%{width:100%;transform:translateX(-25vw);height:10px;}
+    100%{width:50%;transform:translateY(-50px); height:5px;}
+}
+@-webkit-keyframes var2 {
+    0%{transform:translateX(-1000px);}
+    30%{transform:translateX(0px); width:50%;}
+    40%{width:100%;transform:translateX(-25vw);}
+    50%{width:100%;transform:translateX(-25vw);height:10px;}
+    100%{width:50%;transform:translateY(-50px); height:5px;}
+}
+@-webkit-keyframes click_start {
+    0%{stroke-dashoffset:2000;}
+    100%{stroke-dashoffset:0; fill:#ffffff;}
+}
+@keyframes click_start {
+    0%{stroke-dashoffset:2000; }
+    100%{stroke-dashoffset:0; fill:#ffffff;}
+}
+/* //keyframe */
+
+/* SNSボタン */
+.sns_icon{width:40px; height:auto; margin:0 5px; display:inline-block;}
+.sns_icon img{width:100%; transition:0.3s;}
+.sns_icon img:hover{opacity:0.6;}
+/* //SNSボタン */
+
+/*オープニング切り替えスイッチ*/
+/*.entrance_cover{display:none;}
+.main_contents{display:block;}
