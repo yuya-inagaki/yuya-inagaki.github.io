@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120508781-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-120508781-1');
+        </script>
+
+        <meta charset="UTF-8"> <!-- エンコード設定 -->
+        <title>Portfolio | Yuya Inagaki</title> <!-- Title -->
+        <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- View Port -->
+        <meta name="description" content="稲垣 有哉(Yuya Inagaki)のポートフォリオサイトです.過去に作成したwebサイトや発表資料などの成果を公開しています.研究室、過去に作成したサイトや動画などポートフォリオのページです."> <!-- Description -->
+        <meta name="keywords" content="稲垣有哉,稲垣 有哉,Yuya Inagaki,Yuya,Inagaki,早稲田,海陽学園,海陽,webデザイン,GUI">
+        <meta name="author" content="https://y-canvas.com/"> <!-- Author -->
+        <meta property="og:url" content="https://y-canvas.com/portfolio/" />
+        <meta property="og:title" content="Yuya Inagki" />
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="稲垣 有哉(Yuya Inagaki)のポートフォリオサイトです.過去に作成したwebサイトや発表資料などの成果を公開しています.研究室、過去に作成したサイトや動画などポートフォリオのページです." />
+        <meta property="og:image" content="https://y-canvas.com/images/site-image/site-img.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@inagaki_yuya" />
+        <meta property="og:site_name" content="Yuya Inagai" />
+        <meta property="og:locale" content="ja_JP" />
+        <link rel="icon" href="../icon/favicon-32.ico" sizes="32x32"> <!-- favicon -->
+        <link rel="icon" href="../icon/favicon-48.ico" sizes="48x48"> <!-- favicon -->
+        <link rel="apple-touch-icon" href="../icon/ios-icon.png"> <!-- icon for ios -->
+        
+        <!-- CSS Setting -->
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../css/layout.css">
+        <link rel="stylesheet" href="../css/webpage.css">
+        <link rel="stylesheet" href="../css/yuya-original.css">
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"><!-- fontawsome -->
+        <!-- //CSS Setting -->
+        <!-- UIKit Setting -->
+        <link rel="stylesheet" href="../lib/uikit-3.1.5/css/uikit.min.css" />
+        <script src="../lib/uikit-3.1.5/js/uikit.min.js"></script>
+        <script src="../lib/uikit-3.1.5/js/uikit-icons.min.js"></script>
+        <!-- //UIKit Setting -->
+        <!-- Font Setting -->
+        <link href="https://fonts.googleapis.com/css?family=Spinnaker" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet" />
+        <!-- //Font Setting -->
+    </head>
+    
+    <body>
+        <!-- 標準画面 -->
+        <div class="normal_view">
+            <!-- ヘッダー -->
+            <header>
+                <a href="../"><img src="../images/header_icon.png"></a>
+                <!-- ハンバーガーメニュー -->
+                <a class="menu-trigger" href="#">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+                <!-- //ハンバーガーメニュー -->
+                <div id="header_menu">
+                    <div class="header_menu_contents">
+                        <a href="../"><h1>Home</h1></a>
+                        <a href="../aboutme/"><h1>About Me</h1></a>
+                        <a href="../link/"><h1>Link</h1></a>
+                    </div>
+                </div>
+            </header>
+            <!-- //ヘッダー -->
+
+            <!-- Section1 -->
+            <div id="sec1">
+                <img src="../images/portfolio_logo.png">
+            </div>
+            <!-- //Section1 -->
+
+            <!-- ここまで来たらヘッダー固定 -->
+            <div id="header-point"></div>
+            <!-- //ここまで来たらヘッダー固定 -->
+            
+            <div class="uk-container" style="padding:30px 0;">
+                <ul uk-tab>
+                    <li class="uk-active"><a href="#sec2">Webpages</a></li>
+                    <li><a href="#sec3">Research</a></li>
+                    <li><a href="#sec4">Movies</a></li>
+                </ul>
+            </div>
+            
+            <div id="sec2">
+                <div class="uk-container">
+                    <div class="uk-text-center" style="padding:30px 0;">
+                        <h1>WEBPAGES</h1>
+                        <p>過去に作成したウェブサイト</p>
+                    </div>
+                    <div class="uk-child-width-1-2@s" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="../images/portfolio/qulii.png" alt="Qulii">
+                                    <span class="p-top-r-10 date"><i class="far fa-calendar-minus"> since 2018.11</i></span>
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Qulii</h3>
+                                    <span class="badge">Ruby on Rails</span><span class="badge">Wordpress</span><span class="badge">PHP</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+                                    <p>中高生向けの知的体験イベントを紹介するメディアを高校同期と2018年11月に立ち上げた．約半年で月間PV数2万を突破し，様々な企業様とのコラボも実現．</p>
+                                    <a class="uk-button uk-button-default" href="https://qulii.jp" target="_blank">Link</a>
+                                    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-usage2">Read More</button>
+                                    <div id="toggle-usage2" style="padding-top:10px;" hidden>
+                                        <p>企業・団体様の記事の修正等を迅速に反映するために，団体様専用の閲覧ルートを作成している．イベントだけでなく実際に中高生がイベントに参加した体験記や各月ごとのイベントをまとめた記事をメディア形式で掲載している．</p>
+                                        <span class="badge">起業</span><span class="badge">制作</span><span class="badge">管理</span><span class="badge">運営</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="../images/portfolio/youtubernews.png" alt="YouTuber News">
+                                    <span class="p-top-r-10 date"><i class="far fa-calendar-minus"> 2015.05 ~ 2017.11</i></span>
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">YouTuber News</h3>
+                                    <span class="badge">Python</span><span class="badge">YouTube API</span><span class="badge">Wordpress</span><span class="badge">PHP</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+                                    <p>YouTuberに関する最新ニュースをお届けする新型メディアとして2015年に作成．YouTuberにユーザーのリアルな声をお届けするコメント機能と応援機能を設置して，運営開始から約9か月で月間50万PVを突破した．2017年に事業売却．</p>
+                                    <button class="uk-button uk-button-default" disabled>Link</button>
+                                    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-usage4">Read More</button>
+                                    <div id="toggle-usage4" style="padding-top:10px;" hidden>
+                                        <p>YouTubeの成長に目を付けて作成したメディアであったが，2017年に事業売却．私のウェブシステム構築・デザインの原点となった．コメントの解析等をPythonで行うことで流行りのYouTuberや同じ系統のYouTuberを分類するシステムを構築した．</p>
+                                        <span class="badge">事業売却</span><span class="badge">制作</span><span class="badge">管理</span><span class="badge">運営</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top relative">
+                                    <img src="../images/portfolio/jafs.png" alt="子どもの理科離れをなくす会">
+                                    <span class="p-top-r-10 date"><i class="far fa-calendar-minus"> since 2016.05</i></span>
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">子どもの理科離れをなくす会</h3>
+                                        <span class="badge">Wordpress</span><span class="badge">PHP</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+                                    <p>小学生・高校生を対象としたロボット・プログラミング教室のウェブサイト．教室やクラスなどをデータベースで管理し，事務管理の効率が上がった．</p>
+                                    <a class="uk-button uk-button-default" href="https://e-kagaku.com" target="_blank">Link</a>
+                                    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-usage1">Read More</button>
+                                    <div id="toggle-usage1" style="padding-top:10px;" hidden>
+                                        <p>子どもの理科離れをなくす会様から依頼を受けて管理しているサイト．PHPなどを使用してオリジナルテンプレートやデータベースを作成することで，全国の教室情報や生徒の管理を支えている．</p>
+                                        <span class="badge">制作</span><span class="badge">管理</span><span class="badge">運営</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="../images/portfolio/sapphire.png" alt="サファイア青少年グローバル交流センター">
+                                    <span class="p-top-r-10 date"><i class="far fa-calendar-minus"> since 2018.08</i></span>
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">サファイア青少年グローバル交流センター</h3>
+                                    <span class="badge">Wordpress</span><span class="badge">PHP</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+                                    <p>サファイア青少年グローバル交流センター様の企業ページとして2018年に作成．企業様のプログラム投稿機能，ブログ投稿機能，ニュース投稿機能，お問い合わせなどの要求をオリジナルプログラムに反映．</p>
+                                    <a class="uk-button uk-button-default" href="https://sapphire-tokyo.jp/" target="_blank">Link</a>
+                                    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-usage5">Read More</button>
+                                    <div id="toggle-usage5" style="padding-top:10px;" hidden>
+                                        <p>製作時間わずか3日という短期間で制作．その後，管理や運営などを行っている．企業の担当者様に分かりやすいよう管理画面にマニュアルを設置してミスの少なくなるようにした．</p>
+                                        <span class="badge">制作</span><span class="badge">管理</span><span class="badge">運営</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="../images/portfolio/src.png" alt="スペースロボットコンテスト">
+                                    <span class="p-top-r-10 date"><i class="far fa-calendar-minus"> since 2018.10</i></span>
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">スペースロボットコンテスト</h3>
+                                    <span class="badge">Wordpress</span><span class="badge">PHP</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+                                    <p>日本初の実機型STEAM×e-sportsの大会であるスペースロボットコンテストの大会ページ．参加者の結果をリアルタイムで反映したり，プレゼンシートを掲載するシステムを構築．</p>
+                                    <a class="uk-button uk-button-default" href="http://global-science.or.jp/src/" target="_blank">Link</a>
+                                    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-usage10">Read More</button>
+                                    <div id="toggle-usage10" style="padding-top:10px;" hidden>
+                                        <span class="badge">制作</span><span class="badge">管理</span><span class="badge">運営</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="../images/portfolio/agse.png" alt="国際科学教育協会">
+                                    <span class="p-top-r-10 date"><i class="far fa-calendar-minus"> since 2016.05</i></span>
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">国際科学教育協会</h3>
+                                    <span class="badge">Wordpress</span><span class="badge">PHP</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+                                    <p>小学生・高校生を対象としたロボット・プログラミング教室の科学合宿やe-sports等のイベントを発信するサイトとして構築．会のニーズに応える為，オリジナルテンプレートを作成している．</p>
+                                    <a class="uk-button uk-button-default" href="http://global-science.or.jp/" target="_blank">Link</a>
+                                    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-usage3">Read More</button>
+                                    <div id="toggle-usage3" style="padding-top:10px;" hidden>
+                                        <p>国際科学合宿では日本人だけでなく外国の学生の方も参加されるため，英語へ切り替え可能なページ構成を作成．様々な国の方が閲覧するサイトとなっている．</p>
+                                        <span class="badge">制作</span><span class="badge">管理</span><span class="badge">運営</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="../images/portfolio/robosc.png" alt="株式会社ロボスク">
+                                    <span class="p-top-r-10 date"><i class="far fa-calendar-minus"> since 2017.10</i></span>
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">株式会社ロボスク</h3>
+                                    <span class="badge">Wordpress</span><span class="badge">PHP</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+                                    <p>株式会社ロボスク様の企業ページとして作成，その後管理・運営を現在まで行っている．</p>
+                                    <a class="uk-button uk-button-default" href="https://robosc.com" target="_blank">Link</a>
+                                    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-usage6">Read More</button>
+                                    <div id="toggle-usage6" style="padding-top:10px;" hidden>
+                                        <span class="badge">管理</span><span class="badge">運営</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="../images/portfolio/ithack.png" alt="ITハック！">
+                                    <span class="p-top-r-10 date"><i class="far fa-calendar-minus"> since 2017.12</i></span>
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">ITハック！</h3>
+                                    <span class="badge">Wordpress</span><span class="badge">PHP</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+                                    <p>私自身がプログラム関連で困ったことや，新たに知ったことを纏めているブログ．ITに関するライフハックなども気まぐれで更新中．</p>
+                                    <a class="uk-button uk-button-default" href="https://ithack.y-canvas.com/" target="_blank">Link</a>
+                                    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-usage8">Read More</button>
+                                    <div id="toggle-usage8" style="padding-top:10px;" hidden>
+                                        <span class="badge">制作</span><span class="badge">管理</span><span class="badge">運営</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-text-center" style="padding:30px 0;">
+                        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-usage-remain">Read More Webpages</button>
+                    </div>
+                    <div id="toggle-usage-remain" style="padding-top:10px;" hidden>
+                        <div class="uk-child-width-1-3@s" uk-grid>
+                            <div>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img src="../images/portfolio/science-labo.png" alt="株式会社サイエンス・ラボ">
+                                        <span class="p-top-r-10 date"><i class="far fa-calendar-minus"> since 2019.05</i></span>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">株式会社サイエンス・ラボ</h3>
+                                        <span class="badge">Wordpress</span><span class="badge">PHP</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+                                        <p>株式会社サイエンス・ラボ様の企業ページとして作成，その後管理・運営を現在まで行っている．</p>
+                                        <a class="uk-button uk-button-default" href="https://e-kagaku.com/slabo/" target="_blank">Link</a>
+                                        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-usage7">Read More</button>
+                                        <div id="toggle-usage7" style="padding-top:10px;" hidden>
+                                            <span class="badge">制作</span><span class="badge">管理</span><span class="badge">運営</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img src="../images/portfolio/karc_ob.png" alt="海陽学園ロボット部OBサイト">
+                                        <span class="p-top-r-10 date"><i class="far fa-calendar-minus"> since 2014.04</i></span>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">海陽学園ロボット部OBサイト</h3>
+                                        <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+                                        <p>初めてロボット部からOBが排出されたことを機に作成．年に1,2回開催しているOB会の様子や近状報告の場となっている．</p>
+                                        <a class="uk-button uk-button-default" href="https://kaiyorobotclubob.jimdo.com/" target="_blank">Link</a>
+                                        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-usage9">Read More</button>
+                                        <div id="toggle-usage9" style="padding-top:10px;" hidden>
+                                            <span class="badge">制作</span><span class="badge">管理</span><span class="badge">運営</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img src="../images/portfolio/karc.png" alt="海陽学園ロボット部">
+                                        <span class="p-top-r-10 date"><i class="far fa-calendar-minus"> since 2012.04</i></span>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">海陽学園ロボット部</h3>
+                                        <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+                                        <p>人生で一番最初に作成したwebサイト．大会の結果やイベントの告知など学校外への広報をこのサイトを通じて行うようになった．現在も後輩が管理・運営してくれている．</p>
+                                        <a class="uk-button uk-button-default" href="https://kaiyorobotclub.jimdo.com/" target="_blank">Link</a>
+                                        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-usage10">Read More</button>
+                                        <div id="toggle-usage10" style="padding-top:10px;" hidden>
+                                            <span class="badge">制作</span><span class="badge">管理</span><span class="badge">運営</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div id="sec3">
+                <div class="uk-container">
+                    <div class="uk-text-center" style="padding:30px 0;">
+                        <h1>RESEARCH</h1>
+                        <p>過去に作成したウェブサイト</p>
+                    </div>
+                    
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-card-media-left uk-cover-container">
+                            <img src="../images/aboutme_back.png" alt="" uk-cover>
+                            <canvas width="600" height="400"></canvas>
+                        </div>
+                        <div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Media Left</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                <a class="uk-button uk-button-default" href="#" target="_blank">Link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                            <img src="../images/aboutme_icon.png" alt="" uk-cover>
+                            <canvas width="600" height="400"></canvas>
+                        </div>
+                        <div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Media Right</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <!-- Section4 -->
+            <div id="sec4">
+                <div class="container">
+                    <div class="uk-text-center" style="padding:30px 0;">
+                        <h1>YouTube</h1>
+                        <p>過去に作成した動画</p>
+                    </div>
+                    <div class="row uk-text-center">
+                        <div class="col2">
+                            <!-- YouTube -->
+                            <div date-tgt="movie_01" class="mb">
+                                <h2>ドローン映像1</h2>
+                                <p><span uk-icon="icon: play"></span> Watch Movie</p>
+                            </div>
+                            <!-- //YouTube -->
+                        </div>
+                        <div class="col2">
+                            <!-- YouTube -->
+                            <div date-tgt="movie_02" class="mb">
+                                <h2>ドローン映像2</h2>
+                                <p><span uk-icon="icon: play"></span> Watch Movie</p>
+                            </div>
+                            <!-- //YouTube -->
+                        </div>
+                        <div class="col2">
+                            <!-- YouTube -->
+                            <div date-tgt="movie_03" class="mb">
+                                <h2> 早稲田祭2016OF Cheer!</h2>
+                                <p><span uk-icon="icon: play"></span> Watch Movie</p>
+                            </div>
+                            <!-- //YouTube -->
+                        </div>
+                        <div class="col2">
+                            <!-- YouTube -->
+                            <div date-tgt="movie_04" class="mb">
+                                <h2> 大学生M-1GP2016</h2>
+                                <p><span uk-icon="icon: play"></span> Watch Movie</p>
+                            </div>
+                            <!-- //YouTube -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section4 -->
+            
+        </div>
+        <!-- //標準画面 -->
+        
+        
+        <!-- YouTube中身 -->
+        <div class="modal movie_01">
+            <div class="youtube">
+                <p class="closeBtn">
+                    <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+                        <g><polygon class="closeBtn_shape" points="512,89.75 422.256,0.005 256.004,166.256 89.754,0.005 0,89.75 166.255,256 0,422.25 89.754,511.995 256.004,345.745 422.26,511.995 512,422.25 345.744,256 	" style="fill: rgb(75, 75, 75);"></polygon></g>
+                    </svg>
+                </p>
+                <iframe width="560" height="315" rel="https://www.youtube.com/embed/Rr2nC3QorxI?autoplay=1&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="popupBK"></div>
+        </div>
+        <div class="modal movie_02">
+            <div class="youtube">
+                <p class="closeBtn">
+                    <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+                        <g><polygon class="closeBtn_shape" points="512,89.75 422.256,0.005 256.004,166.256 89.754,0.005 0,89.75 166.255,256 0,422.25 89.754,511.995 256.004,345.745 422.26,511.995 512,422.25 345.744,256 	" style="fill: rgb(75, 75, 75);"></polygon></g>
+                    </svg>
+                </p>
+                <iframe width="560" height="315" rel="https://www.youtube.com/embed/3oaGIvmPo_Y?autoplay=1&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="popupBK"></div>
+        </div>
+        <div class="modal movie_03">
+            <div class="youtube">
+                <p class="closeBtn">
+                    <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+                        <g><polygon class="closeBtn_shape" points="512,89.75 422.256,0.005 256.004,166.256 89.754,0.005 0,89.75 166.255,256 0,422.25 89.754,511.995 256.004,345.745 422.26,511.995 512,422.25 345.744,256 	" style="fill: rgb(75, 75, 75);"></polygon></g>
+                    </svg>
+                </p>
+                <iframe width="560" height="315" rel="https://www.youtube.com/embed/cTFXhloFfmo?autoplay=1&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="popupBK"></div>
+        </div>
+        <div class="modal movie_04">
+            <div class="youtube">
+                <p class="closeBtn">
+                    <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+                        <g><polygon class="closeBtn_shape" points="512,89.75 422.256,0.005 256.004,166.256 89.754,0.005 0,89.75 166.255,256 0,422.25 89.754,511.995 256.004,345.745 422.26,511.995 512,422.25 345.744,256 	" style="fill: rgb(75, 75, 75);"></polygon></g>
+                    </svg>
+                </p>
+                <iframe width="560" height="315" rel="https://www.youtube.com/embed/nHRdmjJsEpE?autoplay=1&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="popupBK"></div>
+        </div>
+        <!-- //YouTube中身 -->
+           
+        <footer>
+            <div class="footer_scroll"><i class="fas fa-angle-up"></i></div>
+            <div class="footer_main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col2">
+                            <p>- Yuya Inagaki<br>- 早稲田大学基幹理工学部情報理工学科深澤研究室</p>
+                            <p><a href="https://y-canvas.com" target="_blank">https://y-canvas.com</a></p>
+                            <p><a href="mailto:y-ina3214@toki.waseda.jp">y-ina3214@toki.waseda.jp</a></p>
+                        </div>
+                        <div class="col2">
+                            <p>- Link</p>
+                            <p><a href="../">HOME</a> / <a href="../aboutme/">ABOUT ME</a> / PORTFOLIO / <a href="../link/">LINK</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom"><p>COPY RIGHTS ©️ 2018 YUYA INAGAKI</p></div>
+        </footer>
+
+        <!-- JS Setting -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/function.js"></script>
+        <!-- //JS Setting -->
+
+        
+    </body>
+</html>
