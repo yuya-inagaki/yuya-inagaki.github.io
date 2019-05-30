@@ -11,12 +11,12 @@
 #sec2{width:100%; padding:10px 0;}
 #sec2 h3{padding-bottom:0; margin-bottom:10px;}
 #sec2 .date{background:#1a1a1a; padding:2px 10px; border-radius:15px; font-size:13px; color:white; box-shadow:0 0 13px #535353;}
-#sec2 .badge{padding:2px 7px; margin:0px 2px; border:0.5px solid #c7c7c7; border-radius:10px; font-size:10px;}
+#sec2 .badge{padding:2px 7px; margin:0px 0px; border:0.5px solid #c7c7c7; border-radius:10px; font-size:10px;}
 /* //Section2 */
 
 /* Section3 */
 #sec3{width:100%; padding:10px 0 50px 0; background:#fdfdfd;}
-#sec3 .badge{padding:2px 7px; margin:0px 2px; border:0.5px solid #c7c7c7; border-radius:10px; font-size:10px;}
+#sec3 .badge{padding:2px 7px; margin:0px 0px; border:0.5px solid #c7c7c7; border-radius:10px; font-size:10px;}
 /* //Section3 */
 
 /* Section4 */
