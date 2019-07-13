@@ -35,21 +35,27 @@
 
 /* Section3 */
 #sec3{width:100%; box-sizing:border-box; padding:50px 0; position: relative; background-color:#f9ffaf;}
-#sec3::after{height:40px; content:""; position:absolute; left:0; width:100%; bottom:-40px; background:linear-gradient(135deg, #f9ffaf 20px, transparent 0), linear-gradient(225deg, #f9ffaf 20px, transparent 0); background-size: 40px 40px;}
 #sec3 h1{font-family:'Spinnaker', sans-serif; letter-spacing:5px; text-align:center;}
 #sec3 h3{font-family:'Spinnaker', sans-serif; letter-spacing:2px; margin-bottom:10px; text-align:center;}
-#sec3 .title_underline{width:200px; margin:0 auto 20px; display:block; pointer-events:none; background:repeating-linear-gradient(90deg, #1f1f1f, #1f1f1f 25px, #ffffff 0, #ffffff 50px); animation: move-stripe3 2s infinite linear; background-size:cover;}
-#sec3 .name_sub{text-align:center;}
-#sec3 .col3-2 img{width:100%; pointer-events:none;}
-#sec3 .btn_cover{position:relative; bottom:3em; margin-bottom:-3em; box-sizing:border-box;}
 /* //Section3 */
 
 /* Section4 */
-#sec4{width:100%; box-sizing:border-box; padding:50px 0;}
+#sec4{width:100%; box-sizing:border-box; padding:50px 0; position: relative;}
+#sec4::after{height:40px; content:""; position:absolute; left:0; width:100%; bottom:-40px; background:linear-gradient(135deg, #f9ffaf 20px, transparent 0), linear-gradient(225deg, #f9ffaf 20px, transparent 0); background-size: 40px 40px;}
 #sec4 h1{font-family:'Spinnaker', sans-serif; letter-spacing:5px; text-align:center;}
-#sec4 .title_underline{width:200px; margin:0 auto 20px; display:block; pointer-events:none; background:repeating-linear-gradient(90deg, #1f1f1f, #1f1f1f 25px, #d8d8d8 0, #d8d8d8 50px); animation: move-stripe2 2s infinite linear; background-size:cover;}
-#sec4 .row{text-align:center;}
+#sec4 h3{font-family:'Spinnaker', sans-serif; letter-spacing:2px; margin-bottom:10px; text-align:center;}
+#sec4 .title_underline{width:200px; margin:0 auto 20px; display:block; pointer-events:none; background:repeating-linear-gradient(90deg, #1f1f1f, #1f1f1f 25px, #ffffff 0, #ffffff 50px); animation: move-stripe3 2s infinite linear; background-size:cover;}
+#sec4 .name_sub{text-align:center;}
+#sec4 .col3-2 img{width:100%; pointer-events:none;}
+#sec4 .btn_cover{position:relative; bottom:3em; margin-bottom:-3em; box-sizing:border-box;}
 /* //Section4 */
+
+/* Section5 */
+#sec5{width:100%; box-sizing:border-box; padding:50px 0; background-color:#f9ffaf;}
+#sec5 h1{font-family:'Spinnaker', sans-serif; letter-spacing:5px; text-align:center;}
+#sec5 .title_underline{width:200px; margin:0 auto 20px; display:block; pointer-events:none; background:repeating-linear-gradient(90deg, #1f1f1f, #1f1f1f 25px, #d8d8d8 0, #d8d8d8 50px); animation: move-stripe2 2s infinite linear; background-size:cover;}
+#sec5 .row{text-align:center;}
+/* //Section5 */
 
 
 /* Web Detail */
